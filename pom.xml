@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.scala-ide</groupId>
+  <artifactId>org.scala-ide.product.build</artifactId>
+  <version>2.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>org.scala-ide.sdk</module>
+    <module>org.scala-ide.sdk.feature</module>
+    <module>org.scala-ide.product</module>
+  </modules>
+
+  <properties>
+    <encoding>UTF-8</encoding>
+    <!-- p2 repositories location -->
+    <repo.eclipse.indigo>http://download.eclipse.org/releases/indigo/</repo.eclipse.indigo>
+    <repo.eclipse.juno>http://download.eclipse.org/releases/juno</repo.eclipse.juno>
+    <repo.ajdt.indigo>http://download.eclipse.org/tools/ajdt/37/dev/update</repo.ajdt.indigo>
+    <repo.ajdt.juno>http://download.eclipse.org/tools/ajdt/42/dev/update</repo.ajdt.juno>
+    <repo.equinox.launcher>http://www.chuusai.com/eclipse/equinox-weaving-launcher/</repo.equinox.launcher>
+    <repo.scala-ide.root>http://download.scala-ide.org</repo.scala-ide.root>
+
+    <!-- plugin versions -->
+    <tycho.plugin.version>0.15.0</tycho.plugin.version>
+
+    <!-- dependencies repos, can be overwritten by profiles -->
+    <eclipse.codename>indigo</eclipse.codename>
+    <repo.eclipse>${repo.eclipse.indigo}</repo.eclipse>
+    <repo.ajdt>${repo.ajdt.indigo}</repo.ajdt>
+    <repo.scala-ide.ecosystem>${repo.scala-ide.root}/ecosystem/dev-milestone-2.9/site/</repo.scala-ide.ecosystem>
+
+    <!-- some default values, can be overwritten by profiles -->
+    <scala.version>2.9.3-SNAPSHOT</scala.version>
+    <scala.major.minor.version>2.9</scala.major.minor.version>
+  </properties>
+
+  <profiles>
+    <profile>
+      <!--- the profile using the default values. Scala 2.9.x -->
+      <id>scala-2.9.x</id>
+    </profile>
+
+    <profile>
+      <!-- Scala 2.10.x -->
+      <id>scala-2.10.x</id>
+      <properties>
+        <repo.scala-ide.ecosystem>${repo.scala-ide.root}/ecosystem/dev-milestone-milestone/site/</repo.scala-ide.ecosystem>
+        <scala.version>2.10.0-M7</scala.version>
+        <scala.major.minor.version>2.10.0-M7</scala.major.minor.version>
+      </properties>
+    </profile>
+  </profiles>
+
+  <repositories>
+    <!-- the sonatype repos -->
+    <repository>
+      <id>sonatype.release</id>
+      <name>Sonatype maven release repository</name>
+      <url>https://oss.sonatype.org/content/repositories/releases/</url>
+      <snapshots><enabled>false</enabled></snapshots>
+    </repository>
+    <repository>
+      <id>sonatype.snapshot</id>
+      <name>Sonatype maven snapshot repository</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <snapshots>
+        <updatePolicy>daily</updatePolicy>
+      </snapshots>
+    </repository>
+    <!-- Eclipse repositories -->
+    <repository>
+      <id>scala-ide ecosystem</id>
+      <name>Ecosystem Scala IDE</name>
+      <url>${repo.scala-ide.ecosystem}</url>
+      <layout>p2</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>eclipse.${eclipse.codename}</id>
+      <name>Eclipse p2 repository</name>
+      <layout>p2</layout>
+      <url>${repo.eclipse}</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>ajdt.${eclipse.codename}</id>
+      <name>AJDT for Eclipse p2 repository</name>
+      <layout>p2</layout>
+      <url>${repo.ajdt}</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>target-platform-configuration</artifactId>
+          <version>${tycho.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-p2-repository-plugin</artifactId>
+          <version>${tycho.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-p2-director-plugin</artifactId>
+          <version>${tycho.plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <!-- enable tycho to support eclipse type artifacts -->
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho.plugin.version}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

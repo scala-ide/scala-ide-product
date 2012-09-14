@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Scala Plugin
+Bundle-SymbolicName: org.scala-ide.sdk;singleton:=true
+Bundle-Version: 2.1.0.qualifier
+Bundle-Vendor: scala-ide.org
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin
+Bundle-Activator: 
+ scala.tools.eclipse.ScalaPlugin
+Require-Bundle: 
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.equinox.app
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Eclipse-ExtensibleAPI: 
+ true
+
+
