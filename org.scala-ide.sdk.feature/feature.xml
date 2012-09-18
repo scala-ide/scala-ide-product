@@ -222,36 +222,15 @@
       <update label="Scala IDE for Eclipse update site" url="http://download.scala-ide.org/update-current"/>
    </url>
 
-   <includes
-         id="org.scala-ide.sdt.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.scalaide.worksheet.feature"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.platform"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.cvs"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.jdt"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.pde"
-         version="0.0.0"/>
-
-   <includes
-         id="org.eclipse.help"
-         version="0.0.0"/>
-
    <requires>
       <import plugin="org.eclipse.sdk"/>
+      <import feature="org.scala-ide.sdt.feature"/>
+      <import feature="org.scalaide.worksheet.feature"/>
+      <import feature="org.eclipse.platform"/>
+      <import feature="org.eclipse.cvs"/>
+      <import feature="org.eclipse.jdt"/>
+      <import feature="org.eclipse.pde"/>
+      <import feature="org.eclipse.help"/>
    </requires>
 
    <plugin

@@ -55,7 +55,6 @@
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-p2-repository-plugin</artifactId>
         <configuration>
-          <includeAllDependencies>true</includeAllDependencies>
         </configuration>
       </plugin>
       <plugin>
@@ -90,6 +89,29 @@
           <profile>SDKProfile</profile>
         </configuration>
       </plugin>
+        <plugin>
+          <groupId>org.eclipse.tycho.extras</groupId>
+          <artifactId>tycho-p2-extras-plugin</artifactId>
+          <version>${tycho.plugin.version}</version>
+          <executions>
+            <execution>
+              <phase>prepare-package</phase>
+              <goals>
+                <goal>mirror</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <source>
+              <!-- source repositories to mirror from -->
+              <repository>
+                 <url>${repo.scala-ide.ecosystem}</url>
+                 <!-- supported layouts are "p2-metadata", "p2-artifacts", and "p2" (for joint repositories; default) -->
+                 <layout>p2</layout>
+              </repository>
+            </source>
+          </configuration>
+        </plugin>
     </plugins>
   </build>
 </project>

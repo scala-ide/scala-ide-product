@@ -61,17 +61,6 @@
       <feature id="org.scala-ide.sdk.feature"/>
       <feature id="org.scala-ide.sdt.weaving.feature"/>
       <feature id="org.scalaide.worksheet.feature"/>
-      <feature id="org.eclipse.cvs"/>
-      <feature id="org.eclipse.equinox.p2.core.feature"/>
-      <feature id="org.eclipse.equinox.p2.extras.feature"/>
-      <feature id="org.eclipse.equinox.p2.rcp.feature"/>
-      <feature id="org.eclipse.equinox.p2.user.ui"/>
-      <feature id="org.eclipse.equinox.weaving.sdk"/>
-      <feature id="org.eclipse.help"/>
-      <feature id="org.eclipse.pde"/>
-      <feature id="org.eclipse.jdt"/>
-      <feature id="org.eclipse.platform"/>
-      <feature id="org.eclipse.rcp"/>
    </features>
    <configurations>
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
@@ -86,7 +75,7 @@
 
       <property name="eclipse.p2.data.area" value="@config.dir/../p2/" />
       <property name="eclipse.p2.profile" value="SDKProfile" />
-      <property name="eclipse.buildId" value="2.1-M2-20120914-Typesafe" />
+      <property name="eclipse.buildId" value="2.1-M2-20120918-Typesafe" />
    </configurations>
 
 </product>
