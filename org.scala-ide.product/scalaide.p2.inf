@@ -4,4 +4,5 @@ instructions.configure=\
   addRepository(type:0,location:http${#58}//download.eclipse.org/releases/indigo,name:Indigo);\
   addRepository(type:1,location:http${#58}//download.eclipse.org/releases/indigo,name:Indigo);\
   addRepository(type:0,location:http${#58}//download.scala-ide.org/ecosystem/dev-milestone-2.9/site/,name:Scala IDE);\
-  addRepository(type:1,location:http${#58}//download.scala-ide.org/ecosystem/dev-milestone-2.9/site/,name:Scala IDE);
+  addRepository(type:1,location:http${#58}//download.scala-ide.org/ecosystem/dev-milestone-2.9/site/,name:Scala IDE);\
+  org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.buildId,propValue:2.1-M2-20120918-Typesafe);
