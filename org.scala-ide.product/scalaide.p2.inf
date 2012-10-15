@@ -5,4 +5,17 @@ instructions.configure=\
   addRepository(type:1,location:http${#58}//download.eclipse.org/releases/indigo,name:Indigo);\
   addRepository(type:0,location:http${#58}//download.scala-ide.org/ecosystem/dev-milestone-2.9/site/,name:Scala IDE);\
   addRepository(type:1,location:http${#58}//download.scala-ide.org/ecosystem/dev-milestone-2.9/site/,name:Scala IDE);\
-  org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.buildId,propValue:2.1-M2-20120920-Typesafe);
+  org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.buildId,propValue:2.1-M2-201210155555esafe);
+
+requires.1.namespace = org.eclipse.equinox.p2.iu
+requires.1.name = org.scala-ide.sdt.feature.feature.group
+requires.1.range = [2.1.0, 9.0.0)
+
+requires.2.namespace = org.eclipse.equinox.p2.iu
+requires.2.name = org.scala-ide.sdt.weaving.feature.feature.group
+requires.2.range = [2.1.0, 9.0.0)
+
+requires.3.namespace = org.eclipse.equinox.p2.iu
+requires.3.name = org.scalaide.worksheet.feature.feature.group
+requires.3.range = [0.1.0, 9.0.0)
+

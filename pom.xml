@@ -30,7 +30,7 @@
     <eclipse.codename>indigo</eclipse.codename>
     <repo.eclipse>${repo.eclipse.indigo}</repo.eclipse>
     <repo.ajdt>${repo.ajdt.indigo}</repo.ajdt>
-    <repo.scala-ide.ecosystem>${repo.scala-ide.root}/ecosystem/pre-product/dev-milestone-2.9/site/</repo.scala-ide.ecosystem>
+    <repo.scala-ide.ecosystem>${repo.scala-ide.root}/ecosystem/scala29/dev/site/</repo.scala-ide.ecosystem>
 
     <!-- some default values, can be overwritten by profiles -->
     <scala.version>2.9.3-SNAPSHOT</scala.version>
@@ -47,9 +47,9 @@
       <!-- Scala 2.10.x -->
       <id>scala-2.10.x</id>
       <properties>
-        <repo.scala-ide.ecosystem>${repo.scala-ide.root}/ecosystem/pre-product/dev-milestone-milestone/site/</repo.scala-ide.ecosystem>
+        <repo.scala-ide.ecosystem>${repo.scala-ide.root}/ecosystem/scala210/dev/site/</repo.scala-ide.ecosystem>
         <scala.version>2.10.0-M7</scala.version>
-        <scala.major.minor.version>2.10.0-M7</scala.major.minor.version>
+        <scala.major.minor.version>2.10</scala.major.minor.version>
       </properties>
     </profile>
 
