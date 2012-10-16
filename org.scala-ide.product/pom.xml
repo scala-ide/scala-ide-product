@@ -82,7 +82,7 @@
             <product>
               <id>scalaide.product.id</id>
               <rootFolder>eclipse</rootFolder>
-              <archiveFileName>scala-SDK-2.1-M2-${scala.major.minor.version}</archiveFileName>
+              <archiveFileName>scala-SDK-${version.tag}-${scala.major.minor.version}</archiveFileName>
             </product>
           </products>
           <installFeatures>true</installFeatures>
