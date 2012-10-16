@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
+<!-- ###########
+## generated from template/scalaide.product
+############ -->
+
 <product name="Typesafe Scala IDE" uid="scalaide.product.id" id="org.scala-ide.sdk.product" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
@@ -75,7 +79,7 @@
 
       <property name="eclipse.p2.data.area" value="@config.dir/../p2/" />
       <property name="eclipse.p2.profile" value="SDKProfile" />
-      <property name="eclipse.buildId" value="2.1-M2-20121015-Typesafe" />
+      <property name="eclipse.buildId" value="${build.id}" />
    </configurations>
 
 </product>
