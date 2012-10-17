@@ -1,5 +1,3 @@
-scala-ide-product
-
 # Building
 
 The packaged update site location, and the build id need to be configured before running the actual build. This is done using the `configure` profile.
