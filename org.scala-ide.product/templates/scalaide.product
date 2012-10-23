@@ -21,7 +21,7 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Xmx1024m
+      <vmArgs>-Xmx1048m
 -Xms100m
 -XX:MaxPermSize=256m</vmArgs>
       <vmArgsMac>
