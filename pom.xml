@@ -33,7 +33,8 @@
     <eclipse.codename>indigo</eclipse.codename>
     <repo.eclipse>${repo.eclipse.indigo}</repo.eclipse>
     <repo.ajdt>${repo.ajdt.indigo}</repo.ajdt>
-    <repopath.scala-ide.ecosystem>/sdk/e37/scala29/dev/site/</repopath.scala-ide.ecosystem>
+    <repopath.platform>/sdk/e37</repopath.platform>
+    <repopath.scala-ide.ecosystem>/scala29/dev/site/</repopath.scala-ide.ecosystem>
 
     <!-- some default values, can be overwritten by profiles -->
     <version.tag>local</version.tag>
@@ -51,9 +52,23 @@
       <!-- Scala 2.10.x -->
       <id>scala-2.10.x</id>
       <properties>
-        <repopath.scala-ide.ecosystem>/sdk/e37/scala210/dev/site/</repopath.scala-ide.ecosystem>
+        <repopath.scala-ide.ecosystem>/scala210/dev/site/</repopath.scala-ide.ecosystem>
         <scala.version>2.10.0-RC1</scala.version>
         <scala.major.minor.version>2.10</scala.major.minor.version>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>indigo</id>
+    </profile>
+
+    <profile>
+      <id>juno</id>
+      <properties>
+        <eclipse.codename>juno</eclipse.codename>
+        <repo.eclipse>${repo.eclipse.juno}</repo.eclipse>
+        <repo.ajdt>${repo.ajdt.juno}</repo.ajdt>
+        <repopath.platform>/sdk/e38</repopath.platform>
       </properties>
     </profile>
 
@@ -138,7 +153,7 @@
     <repository>
       <id>scala-ide ecosystem</id>
       <name>Ecosystem Scala IDE</name>
-      <url>${repo.scala-ide.root}${repopath.scala-ide.ecosystem}</url>
+      <url>${repo.scala-ide.root}${repopath.platform}${repopath.scala-ide.ecosystem}</url>
       <layout>p2</layout>
       <snapshots>
         <enabled>false</enabled>
