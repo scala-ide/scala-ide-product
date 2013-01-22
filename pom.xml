@@ -53,7 +53,7 @@
       <id>scala-2.10.x</id>
       <properties>
         <repopath.scala-ide.ecosystem>/scala210/dev/site/</repopath.scala-ide.ecosystem>
-        <scala.version>2.10.0-RC1</scala.version>
+        <scala.version>2.10.0</scala.version>
         <scala.major.minor.version>2.10</scala.major.minor.version>
       </properties>
     </profile>
