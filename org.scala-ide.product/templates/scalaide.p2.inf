@@ -7,8 +7,8 @@ instructions.configure=\
   addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/3.7,name:The Eclipse Project Updates);\
   addRepository(type:0,location:http${#58}//download.eclipse.org/releases/indigo,name:Indigo);\
   addRepository(type:1,location:http${#58}//download.eclipse.org/releases/indigo,name:Indigo);\
-  addRepository(type:0,location:http${#58}//download.scala-ide.org${repopath.scala-ide.ecosystem},name:Scala IDE);\
-  addRepository(type:1,location:http${#58}//download.scala-ide.org${repopath.scala-ide.ecosystem},name:Scala IDE);\
+  addRepository(type:0,location:http${#58}//download.scala-ide.org${repopath.platform}${repopath.scala-ide.ecosystem},name:Scala IDE);\
+  addRepository(type:1,location:http${#58}//download.scala-ide.org${repopath.platform}${repopath.scala-ide.ecosystem},name:Scala IDE);\
   org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.buildId,propValue:${build.id});
 
 requires.1.namespace = org.eclipse.equinox.p2.iu
