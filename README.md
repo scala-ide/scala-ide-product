@@ -6,4 +6,4 @@ The packaged update site location, and the build id need to be configured before
 
 After that, the _normal_ build can be run
 
-    mvn -P<build_profile> -Dversion.tag=<major.miror-version> -Djarsigner.storepass=******** -Djarsigner.keypass=******** -Djarsigner.keystore=<pathTo/typesafe-keystore/typesafe.keystore> clean package
+    mvn -Dtycho.localArtifacts=ignore -P<build_profile> -Dversion.tag=<major.miror-version> -Djarsigner.storepass=******** -Djarsigner.keypass=******** -Djarsigner.keystore=<pathTo/typesafe-keystore/typesafe.keystore> clean package
