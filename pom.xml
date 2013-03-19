@@ -177,6 +177,15 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>m2e-scala</id>
+      <name>M2Eclipse-scala p2 repository</name>
+      <layout>p2</layout>
+      <url>http://alchim31.free.fr/m2e-scala/update-site</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
   <build>
