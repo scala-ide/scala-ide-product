@@ -34,7 +34,7 @@
     <repo.eclipse>${repo.eclipse.indigo}</repo.eclipse>
     <repo.ajdt>${repo.ajdt.indigo}</repo.ajdt>
     <repopath.platform>/sdk/e37</repopath.platform>
-    <repopath.scala-ide.ecosystem>/scala29/dev/site/</repopath.scala-ide.ecosystem>
+    <repopath.scala-ide.ecosystem>/scala29/stable/site/</repopath.scala-ide.ecosystem>
 
     <!-- some default values, can be overwritten by profiles -->
     <version.tag>local</version.tag>
@@ -52,7 +52,7 @@
       <!-- Scala 2.10.x -->
       <id>scala-2.10.x</id>
       <properties>
-        <repopath.scala-ide.ecosystem>/scala210/dev/site/</repopath.scala-ide.ecosystem>
+        <repopath.scala-ide.ecosystem>/scala210/stable/site/</repopath.scala-ide.ecosystem>
         <scala.version>2.10.0</scala.version>
         <scala.major.minor.version>2.10</scala.major.minor.version>
       </properties>
