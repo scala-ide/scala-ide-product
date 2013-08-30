@@ -33,6 +33,10 @@
              name="buildIdLocation"
              value="222,190">
        </property>
+       <property
+             name="cssTheme"
+             value="org.eclipse.e4.ui.css.theme.e4_default">
+       </property>
     </product>
  </extension>
  <extension point="org.eclipse.ui.intro">
