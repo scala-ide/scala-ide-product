@@ -69,7 +69,7 @@
            but we package it with the kepler versio of Eclipse -->
       <id>juno</id>
       <properties>
-        <eclipse.codename>juno</eclipse.codename>
+        <eclipse.codename>kepler</eclipse.codename>
         <repo.eclipse>${repo.eclipse.kepler}</repo.eclipse>
         <repo.ajdt>${repo.ajdt.kepler}</repo.ajdt>
         <repopath.platform>/sdk/e38</repopath.platform>
