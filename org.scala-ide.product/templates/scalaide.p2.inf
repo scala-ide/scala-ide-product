@@ -3,23 +3,23 @@
 ###############
 
 instructions.configure=\
-  addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/3.7,name:The Eclipse Project Updates);\
-  addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/3.7,name:The Eclipse Project Updates);\
-  addRepository(type:0,location:http${#58}//download.eclipse.org/releases/indigo,name:Indigo);\
-  addRepository(type:1,location:http${#58}//download.eclipse.org/releases/indigo,name:Indigo);\
+  addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.3,name:The Eclipse Project Updates);\
+  addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.3,name:The Eclipse Project Updates);\
+  addRepository(type:0,location:http${#58}//download.eclipse.org/releases/kepler,name:Kepler);\
+  addRepository(type:1,location:http${#58}//download.eclipse.org/releases/kepler,name:Kepler);\
   addRepository(type:0,location:http${#58}//download.scala-ide.org${repopath.platform}${repopath.scala-ide.ecosystem},name:Scala IDE);\
   addRepository(type:1,location:http${#58}//download.scala-ide.org${repopath.platform}${repopath.scala-ide.ecosystem},name:Scala IDE);\
   org.eclipse.equinox.p2.touchpoint.eclipse.setProgramProperty(propName:eclipse.buildId,propValue:${build.id});
 
 requires.1.namespace = org.eclipse.equinox.p2.iu
 requires.1.name = org.scala-ide.sdt.feature.feature.group
-requires.1.range = [2.1.0, 9.0.0)
+requires.1.range = [3.0.0, 9.0.0)
 
 requires.2.namespace = org.eclipse.equinox.p2.iu
 requires.2.name = org.scala-ide.sdt.weaving.feature.feature.group
-requires.2.range = [2.1.0, 9.0.0)
+requires.2.range = [3.0.0, 9.0.0)
 
 requires.3.namespace = org.eclipse.equinox.p2.iu
 requires.3.name = org.scalaide.worksheet.feature.feature.group
-requires.3.range = [0.1.0, 9.0.0)
+requires.3.range = [0.2.0, 9.0.0)
 
