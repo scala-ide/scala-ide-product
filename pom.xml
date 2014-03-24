@@ -72,7 +72,7 @@
         <eclipse.codename>kepler</eclipse.codename>
         <repo.eclipse>${repo.eclipse.kepler}</repo.eclipse>
         <repo.ajdt>${repo.ajdt.kepler}</repo.ajdt>
-        <repopath.platform>/sdk/e38</repopath.platform>
+        <repopath.platform>/sdk/helium/e38</repopath.platform>
       </properties>
     </profile>
 
