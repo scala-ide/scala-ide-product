@@ -229,6 +229,7 @@
       <import feature="org.scala-ide.play2.feature"/>
       <import feature="org.eclipse.platform"/>
       <import feature="org.eclipse.cvs"/>
+      <import feature="org.eclipse.egit"/>
       <import feature="org.eclipse.jdt"/>
       <import feature="org.eclipse.pde"/>
       <import feature="org.eclipse.help"/>
