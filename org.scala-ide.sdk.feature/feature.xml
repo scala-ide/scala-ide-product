@@ -226,7 +226,6 @@
       <import plugin="org.eclipse.sdk"/>
       <import feature="org.scala-ide.sdt.feature"/>
       <import feature="org.scalaide.worksheet.feature"/>
-      <import feature="org.scala-ide.play2.feature"/>
       <import feature="org.eclipse.platform"/>
       <import feature="org.eclipse.cvs"/>
       <import feature="org.eclipse.egit"/>
