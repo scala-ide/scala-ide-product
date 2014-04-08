@@ -65,7 +65,6 @@
       <feature id="org.scala-ide.sdk.feature"/>
       <feature id="org.scala-ide.sdt.weaving.feature"/>
       <feature id="org.scalaide.worksheet.feature"/>
-      <feature id="org.scala-ide.play2.feature"/>
       <feature id="org.eclipse.m2e.feature"/>
       <feature id="org.maven.ide.eclipse.scala_feature"/>
    </features>
