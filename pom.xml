@@ -16,15 +16,15 @@
   <properties>
     <encoding>UTF-8</encoding>
     <!-- p2 repositories location -->
-    <repo.eclipse.juno>http://download.eclipse.org/releases/juno</repo.eclipse.juno>
     <repo.eclipse.kepler>http://download.eclipse.org/releases/kepler</repo.eclipse.kepler>
-    <repo.ajdt.juno>http://download.eclipse.org/tools/ajdt/42/dev/update</repo.ajdt.juno>
-    <repo.ajdt.kepler>http://download.eclipse.org/tools/ajdt/43/dev/update</repo.ajdt.kepler>
+    <repo.ajdt.kepler>http://download.eclipse.org/tools/ajdt/43/update</repo.ajdt.kepler>
+    <repo.eclipse.luna>http://download.eclipse.org/releases/luna</repo.eclipse.luna>
+    <repo.ajdt.luna>http://download.eclipse.org/tools/ajdt/44/dev/update</repo.ajdt.luna>
     <repo.equinox.launcher>http://www.chuusai.com/eclipse/equinox-weaving-launcher/</repo.equinox.launcher>
     <repo.scala-ide.root>http://download.scala-ide.org</repo.scala-ide.root>
 
     <!-- plugin versions -->
-    <tycho.plugin.version>0.18.0</tycho.plugin.version>
+    <tycho.plugin.version>0.20.0</tycho.plugin.version>
 
 
     <build.id>${version.tag}-${maven.build.timestamp}-Typesafe</build.id>
@@ -65,17 +65,24 @@
     </profile>
 
     <profile>
-      <!-- It is the juno profile, because it packages the plugins build on juno,
-           but we package it with the kepler versio of Eclipse -->
-      <id>juno</id>
+      <id>kepler</id>
       <properties>
         <eclipse.codename>kepler</eclipse.codename>
         <repo.eclipse>${repo.eclipse.kepler}</repo.eclipse>
         <repo.ajdt>${repo.ajdt.kepler}</repo.ajdt>
-        <repopath.platform>/sdk/helium/e38</repopath.platform>
+        <repopath.platform>/sdk/lithium/e38</repopath.platform>
       </properties>
     </profile>
 
+    <profile>
+      <id>luna</id>
+      <properties>
+        <eclipse.codename>luna</eclipse.codename>
+        <repo.eclipse>${repo.eclipse.luna}</repo.eclipse>
+        <repo.ajdt>${repo.ajdt.luna}</repo.ajdt>
+        <repopath.platform>/sdk/lithium/e44</repopath.platform>
+      </properties>
+    </profile>
     <profile>
       <!-- jar signing -->
       <id>sign</id>
