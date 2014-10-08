@@ -61,12 +61,12 @@
    </vm>
 
    <features>
-      <feature id="org.scala-ide.sdt.feature"/>
-      <feature id="org.scala-ide.sdk.feature"/>
-      <feature id="org.scala-ide.sdt.weaving.feature"/>
-      <feature id="org.scalaide.worksheet.feature"/>
-      <feature id="org.eclipse.m2e.feature"/>
-      <feature id="org.maven.ide.eclipse.scala_feature"/>
+      <feature id="org.scala-ide.sdt.feature" installMode="root"/>
+      <feature id="org.scala-ide.sdk.feature" installMode="root"/>
+      <feature id="org.scala-ide.sdt.weaving.feature" installMode="root"/>
+      <feature id="org.scalaide.worksheet.feature" installMode="root"/>
+      <feature id="org.eclipse.m2e.feature" installMode="root"/>
+      <feature id="org.maven.ide.eclipse.scala_feature" installMode="root"/>
    </features>
    <configurations>
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
@@ -82,6 +82,7 @@
       <property name="eclipse.p2.data.area" value="@config.dir/../p2/" />
       <property name="eclipse.p2.profile" value="SDKProfile" />
       <property name="eclipse.buildId" value="${build.id}" />
+      <property name="osgi.instance.area.default" value="@user.home/workspace" />
    </configurations>
 
 </product>
