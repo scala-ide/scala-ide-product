@@ -197,6 +197,15 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>color-theme</id>
+      <name>Eclipse Color Theme repository</name>
+      <layout>p2</layout>
+      <url>http://eclipse-color-theme.github.com/update</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
   <build>
