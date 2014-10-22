@@ -10,6 +10,7 @@
           name="Scala IDE">
        <property name="aboutImage" value="product.png"/>
        <property name="aboutText" value="%productBlurb"/>
+       <property name="appName" value="Scala IDE"/>
        <property
              name="preferenceCustomization"
              value="plugin_customization.ini">
