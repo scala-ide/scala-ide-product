@@ -40,6 +40,8 @@
     <version.tag>local</version.tag>
     <scala.version>Select a profile!</scala.version>
     <scala.major.minor.version>Select a profile!</scala.major.minor.version>
+    <feature.extra.scalatest.entry></feature.extra.scalatest.entry>
+    <product.extra.scalatest.entry></product.extra.scalatest.entry>
   </properties>
 
   <profiles>
@@ -137,10 +139,33 @@
                   </resources>              
                 </configuration>            
               </execution>
+              <execution>
+                <id>copy-resources-2</id>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>copy-resources</goal>
+                </goals>
+                <configuration>
+                  <outputDirectory>${basedir}/org.scala-ide.sdk.feature</outputDirectory>
+                  <resources>
+                    <resource>
+                      <directory>${basedir}/org.scala-ide.sdk.feature/templates</directory>
+                      <filtering>true</filtering>
+                    </resource>
+                  </resources>
+                </configuration>
+              </execution>
             </executions>
           </plugin>
         </plugins>
       </build>
+    </profile>
+    <profile>
+      <id>withScalaTest</id>
+      <properties>
+        <feature.extra.scalatest.entry><![CDATA[<import feature="org.scala-ide.sdt.scalatest.feature"/>]]></feature.extra.scalatest.entry>
+        <product.extra.scalatest.entry><![CDATA[<feature id="org.scala-ide.sdt.scalatest.feature" installMode="root"/>]]></product.extra.scalatest.entry>
+      </properties>
     </profile>
   </profiles>
 
