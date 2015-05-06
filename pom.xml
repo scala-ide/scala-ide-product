@@ -20,12 +20,10 @@
     <repo.ajdt.kepler>http://download.eclipse.org/tools/ajdt/43/update</repo.ajdt.kepler>
     <repo.eclipse.luna>http://download.eclipse.org/releases/luna</repo.eclipse.luna>
     <repo.ajdt.luna>http://download.eclipse.org/tools/ajdt/44/dev/update</repo.ajdt.luna>
-    <repo.equinox.launcher>http://www.chuusai.com/eclipse/equinox-weaving-launcher/</repo.equinox.launcher>
     <repo.scala-ide.root>http://download.scala-ide.org</repo.scala-ide.root>
 
     <!-- plugin versions -->
     <tycho.plugin.version>0.21.0</tycho.plugin.version>
-
 
     <build.id>${version.tag}-${maven.build.timestamp}-Typesafe</build.id>
 
@@ -85,6 +83,7 @@
         <repopath.platform>/sdk/lithium/e44</repopath.platform>
       </properties>
     </profile>
+
     <profile>
       <!-- jar signing -->
       <id>sign</id>
@@ -108,7 +107,7 @@
               </execution>
             </executions>
             <configuration>
-              <alias>typesafe</alias> 
+              <alias>typesafe</alias>
             </configuration>
           </plugin>
         </plugins>
@@ -131,13 +130,13 @@
                 </goals>
                 <configuration>
                   <outputDirectory>${basedir}/org.scala-ide.product</outputDirectory>
-                  <resources>          
+                  <resources>
                     <resource>
                       <directory>${basedir}/org.scala-ide.product/templates</directory>
                       <filtering>true</filtering>
                     </resource>
-                  </resources>              
-                </configuration>            
+                  </resources>
+                </configuration>
               </execution>
               <execution>
                 <id>copy-resources-2</id>

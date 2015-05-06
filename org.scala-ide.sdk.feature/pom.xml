@@ -9,5 +9,5 @@
   </parent>
   <artifactId>org.scala-ide.sdk.feature</artifactId>
   <packaging>eclipse-feature</packaging>
-  
+
 </project>
