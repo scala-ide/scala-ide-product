@@ -46,11 +46,5 @@
           productId="org.scala-ide.sdt.product">
     </introProductBinding>
  </extension>
- <extension
-       point="org.eclipse.core.runtime.preferences">
-    <initializer
-          class="scala.tools.eclipse.PreferenceInitializer">
-    </initializer>
- </extension>
  
 </plugin>
