@@ -23,7 +23,7 @@
     <repo.scala-ide.root>http://download.scala-ide.org</repo.scala-ide.root>
 
     <!-- plugin versions -->
-    <tycho.plugin.version>0.21.0</tycho.plugin.version>
+    <tycho.plugin.version>0.25.0</tycho.plugin.version>
 
     <build.id>${version.tag}-${maven.build.timestamp}-Typesafe</build.id>
 
