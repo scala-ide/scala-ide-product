@@ -17,6 +17,15 @@
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>target-platform-configuration</artifactId>
         <configuration>
+          <dependency-resolution>
+            <extraRequirements>
+              <requirement>
+                <type>eclipse-feature</type>
+                <id>org.eclipse.equinox.sdk.feature.group</id>
+                <versionRange>3.12.0.v20160829-1338</versionRange>
+              </requirement>
+            </extraRequirements>
+          </dependency-resolution>
           <environments>
             <environment>
               <os>macosx</os>
