@@ -22,7 +22,7 @@
               <requirement>
                 <type>eclipse-feature</type>
                 <id>org.eclipse.equinox.sdk.feature.group</id>
-                <versionRange>3.12.0</versionRange>
+                <versionRange>[3.12, 3.13)</versionRange>
               </requirement>
             </extraRequirements>
           </dependency-resolution>
