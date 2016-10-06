@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="org.scala-ide.target" sequenceNumber="4">
+  <locations>
+    <location includeAllPlatforms="true" includeConfigurePhase="false" includeMode="slicer" includeSource="false" type="InstallableUnit">
+    <unit id="org.eclipse.equinox.sdk.feature.group" version="0.0.0"/>
+    <repository location="http://download.eclipse.org/eclipse/updates/4.6"/>
+    </location>
+  </locations>
+  <includeBundles>
+    <plugin id="org.eclipse.equinox.launcher.cocoa.macosx.x86_64"/>
+  </includeBundles>
+</target>

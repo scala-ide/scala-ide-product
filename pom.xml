@@ -10,6 +10,7 @@
   <modules>
     <module>org.scala-ide.sdk</module>
     <module>org.scala-ide.sdk.feature</module>
+    <module>org.scala-ide.target</module>
     <module>org.scala-ide.product</module>
   </modules>
 
