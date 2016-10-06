@@ -10,4 +10,9 @@
   <includeBundles>
     <plugin id="org.eclipse.equinox.launcher.cocoa.macosx.x86_64"/>
   </includeBundles>
+  <environment>
+    <os>macosx</os>
+    <ws>cocoa</ws>
+    <arch>x86_64</arch>
+  </environment>
 </target>
