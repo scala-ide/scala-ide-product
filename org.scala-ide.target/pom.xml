@@ -7,7 +7,7 @@
     <artifactId>org.scala-ide.product.build</artifactId>
     <version>4.5.0-SNAPSHOT</version>
   </parent>
-  <artifactId>org.scala-ide.sdk</artifactId>
-  <packaging>eclipse-plugin</packaging>
-
+  <artifactId>org.scala-ide.target</artifactId>
+  <version>1.0</version>
+  <packaging>eclipse-target-definition</packaging>
 </project>
