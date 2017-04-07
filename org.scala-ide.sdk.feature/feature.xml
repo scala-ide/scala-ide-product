@@ -2,7 +2,7 @@
 <feature
       id="org.scala-ide.sdk.feature"
       label="Scala SDK"
-      version="4.5.0.qualifier"
+      version="4.6.0.qualifier"
       provider-name="scala-ide.org"
       plugin="org.scala-ide.sdk">
 

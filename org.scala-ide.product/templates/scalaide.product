@@ -62,11 +62,11 @@
    <features>
       <feature id="org.scala-ide.sdt.feature" installMode="root"/>
       <feature id="org.scala-ide.sdt.weaving.feature" />
-      <feature id="org.scala-ide.scala211.feature" installMode="root"/>
-      <feature id="org.scala-ide.scala211.source.feature" installMode="root"/>
+      <feature id="org.scala-ide.scala212.feature" installMode="root"/>
+      <feature id="org.scala-ide.scala212.source.feature" installMode="root"/>
       <feature id="org.scala-ide.sdk.feature" installMode="root"/>
       <feature id="org.scalaide.worksheet.feature" installMode="root"/>
-      <feature id="org.scala-ide.play2.feature" installMode="root"/>
+      <!--feature id="org.scala-ide.play2.feature" installMode="root"/ -->
       ${product.extra.scalatest.entry}
       <feature id="org.eclipse.m2e.feature" installMode="root"/>
       <feature id="org.maven.ide.eclipse.scala_feature" installMode="root"/>
