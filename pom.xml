@@ -71,7 +71,7 @@
       <id>scala-2.12.x</id>
       <properties>
         <repopath.scala-ide.ecosystem>/scala212/stable/site/</repopath.scala-ide.ecosystem>
-        <scala.version>2.12.1</scala.version>
+        <scala.version>2.12.2</scala.version>
         <scala.major.minor.version>2.12</scala.major.minor.version>
       </properties>
     </profile>
