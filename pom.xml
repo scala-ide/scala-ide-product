@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.scala-ide</groupId>
   <artifactId>org.scala-ide.product.build</artifactId>
-  <version>4.6.1-SNAPSHOT</version>
+  <version>4.7.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -22,6 +22,8 @@
     <repo.ajdt.luna>http://download.eclipse.org/tools/ajdt/44/dev/update</repo.ajdt.luna>
     <repo.eclipse.neon>http://download.eclipse.org/releases/neon</repo.eclipse.neon>
     <repo.ajdt.neon>http://download.eclipse.org/tools/ajdt/46/dev/update</repo.ajdt.neon>
+    <repo.eclipse.oxygen>http://download.eclipse.org/releases/oxygen</repo.eclipse.oxygen>
+    <repo.ajdt.oxygen>http://download.eclipse.org/tools/ajdt/47/dev/update</repo.ajdt.oxygen>
     <repo.scala-ide.root>http://download.scala-ide.org</repo.scala-ide.root>
 
     <!-- plugin versions -->
@@ -61,7 +63,7 @@
       <id>scala-2.11.x</id>
       <properties>
         <repopath.scala-ide.ecosystem>/scala211/stable/site/</repopath.scala-ide.ecosystem>
-        <scala.version>2.11.0</scala.version>
+        <scala.version>2.11.11</scala.version>
         <scala.major.minor.version>2.11</scala.major.minor.version>
       </properties>
     </profile>
@@ -71,7 +73,7 @@
       <id>scala-2.12.x</id>
       <properties>
         <repopath.scala-ide.ecosystem>/scala212/stable/site/</repopath.scala-ide.ecosystem>
-        <scala.version>2.12.2</scala.version>
+        <scala.version>2.12.3</scala.version>
         <scala.major.minor.version>2.12</scala.major.minor.version>
       </properties>
     </profile>
@@ -103,6 +105,16 @@
         <repo.eclipse>${repo.eclipse.neon}</repo.eclipse>
         <repo.ajdt>${repo.ajdt.neon}</repo.ajdt>
         <repopath.platform>/sdk/lithium/e46</repopath.platform>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>oxygen</id>
+      <properties>
+        <eclipse.codename>oxygen</eclipse.codename>
+        <repo.eclipse>${repo.eclipse.oxygen}</repo.eclipse>
+        <repo.ajdt>${repo.ajdt.oxygen}</repo.ajdt>
+        <repopath.platform>/sdk/lithium/e47</repopath.platform>
       </properties>
     </profile>
 
